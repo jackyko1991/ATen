@@ -35,9 +35,9 @@ Inplace operations are also provided, and always suffixed by `_` to indicate the
 # Windows: (tested on MSVC2015)
 - Visual Studio 2015
 - CMake (https://cmake.org/download/)
-- [OpenCV](https://github.com/opencv/opencv) (build from source recommended)
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (Optional, for GPU acceleration)
-- [CUDNN](https://developer.nvidia.com/cudnn (Optional, for CUDNN acceleration)
+- OpenCV (https://github.com/opencv/opencv) (build from source recommended)
+- CUDA Toolkit (https://developer.nvidia.com/cuda-toolkit) (Optional, for GPU acceleration)
+- CUDNN (https://developer.nvidia.com/cudnn (Optional, for CUDNN acceleration)
 ```
 
 ### Installation
@@ -51,7 +51,7 @@ TH/THC/THNN/THCUNN are provided (as git subtrees), so the repo is standalone. Yo
 sudo easy_install pip
 # Ubuntu: if you don't have pip
 apt-get -y install python-pip
-# Windows: python is required, recommending [Anaconda with python 2.7](https://www.anaconda.com/download/)
+# Windows: python is required, recommending Anaconda with python 2.7 (https://www.anaconda.com/download/)
 
 # if you don't have pyyaml, run following command from commandline
 Linux: sudo pip install pyyaml
