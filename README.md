@@ -30,6 +30,16 @@ Tensor histc(int64_t bins, Scalar min, Scalar max) const;
 
 Inplace operations are also provided, and always suffixed by `_` to indicate they will modify the Tensor.
 
+### Prerequisite
+```
+# Windows: (tested on MSVC2015)
+- Visual Studio 2015
+- CMake (https://cmake.org/download/)
+- OpenCV (https://github.com/opencv/opencv, build from source recommended)
+- CUDA Toolkit (https://developer.nvidia.com/cuda-toolkit, Optional for GPU acceleration)
+- CUDNN (https://developer.nvidia.com/cudnn, Optional for CUDNN acceleration)
+```
+
 ### Installation
 
 TH/THC/THNN/THCUNN are provided (as git subtrees), so the repo is standalone. You will need a C++11 compiler, cmake, and the pyyaml python package.
@@ -41,19 +51,25 @@ TH/THC/THNN/THCUNN are provided (as git subtrees), so the repo is standalone. Yo
 sudo easy_install pip
 # Ubuntu: if you don't have pip
 apt-get -y install python-pip
+# Windows: python is required, recommending Anaconda with python 2.7 (https://www.anaconda.com/download/)
 
-# if you don't have pyyaml
-sudo pip install pyyaml
+# if you don't have pyyaml, run following command from commandline
+Linux: sudo pip install pyyaml
+Windows: pip install pyyaml (python binary folder need to be in system path)
 
+# build
+Linux:
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/where/you/want # specify your dest directory
 # cmake .. -DNO_CUDA  # for CPU only machines
 make install
+
+Windows:
+1. CMake and configure
+2. Generate and open solution
+3. Debug and Release build
 ```
-
-To install on Windows, you will need to install a [python windows release](https://www.python.org/downloads/windows/) and then `pip install pyyaml` from `cmd.exe`. Then install [CMake](https://cmake.org/download/) and use it to build a Visual Studio project for ATen, which can then build the binaries.
-
 
 ### Example usage
 
