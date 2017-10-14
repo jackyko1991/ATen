@@ -31,7 +31,7 @@ Tensor histc(int64_t bins, Scalar min, Scalar max) const;
 Inplace operations are also provided, and always suffixed by `_` to indicate they will modify the Tensor.
 
 ### Prerequisite
-# Windows: (tested on MSVC2015)
+#### Windows: (tested on MSVC2015)
 - Visual Studio 2015
 - [CMake](https://cmake.org/download/)
 - [OpenCV](https://github.com/opencv/opencv) (build from source recommended)
