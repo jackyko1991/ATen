@@ -36,7 +36,7 @@ Inplace operations are also provided, and always suffixed by `_` to indicate the
 - [CMake](https://cmake.org/download/)
 - [OpenCV](https://github.com/opencv/opencv) (build from source recommended)
 - [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (Optional, for GPU acceleration)
-- [CUDNN](https://developer.nvidia.com/cudnn (Optional, for CUDNN acceleration)
+- [CUDNN](https://developer.nvidia.com/cudnn) (Optional, for CUDNN acceleration)
 
 ### Installation
 
