@@ -31,14 +31,12 @@ Tensor histc(int64_t bins, Scalar min, Scalar max) const;
 Inplace operations are also provided, and always suffixed by `_` to indicate they will modify the Tensor.
 
 ### Prerequisite
-```
 # Windows: (tested on MSVC2015)
 - Visual Studio 2015
 - [CMake](https://cmake.org/download/)
 - [OpenCV](https://github.com/opencv/opencv) (build from source recommended)
 - [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (Optional, for GPU acceleration)
 - [CUDNN](https://developer.nvidia.com/cudnn (Optional, for CUDNN acceleration)
-```
 
 ### Installation
 
