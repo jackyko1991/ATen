@@ -152,7 +152,7 @@ void THCudaSparse_Xcoosort_bufferSizeExt(THCState *state, long m, long n, long n
   THCusparseCheck(cusparseXcoosort_bufferSizeExt(handle, i_m, i_n, i_nnz, cooRows, cooCols, pBufferSizeInBytes));
 }
 
-THC_API void THCudaSparse_XcoosortByRow(THCState *state, long m, long n, long nnz, int *cooRows, int *cooCols, int *P, void *pBuffer)
+void THCudaSparse_XcoosortByRow(THCState *state, long m, long n, long nnz, int *cooRows, int *cooCols, int *P, void *pBuffer)
 {
   THAssertMsg((m <= INT_MAX) && (n <= INT_MAX) && (nnz <= INT_MAX),
     "XcoosortByRow only supports m, n, nnz with the bound [val] <= %d",

@@ -34,7 +34,7 @@ Inplace operations are also provided, and always suffixed by `_` to indicate the
 #### Windows: (tested on MSVC2015)
 - Visual Studio 2015
 - [CMake](https://cmake.org/download/)
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (Optional, for GPU acceleration)
+- [CUDA Toolkit 8](https://developer.nvidia.com/cuda-80-ga2-download-archive) (Optional, for GPU acceleration, other version not tested)
 - [CUDNN](https://developer.nvidia.com/cudnn) (Optional, for CUDNN acceleration)
 
 ### Installation

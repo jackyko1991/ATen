@@ -334,8 +334,8 @@ void THCTensor_(expandNd)(THCState *state, THCTensor **rets, THCTensor **ops, in
     THArgCheck(THCTensor_(nDimension)(state, ops[i]) > 0, i, "can't expand empty tensor %d", i);
   }
 
-  long *op_sizes[count];
-  long op_dims[count];
+  int64_t **op_sizes = (int64_t **)THAlloc(count * sizeof(int64_t *));
+  int64_t *op_dims = (int64_t *)THAlloc(count * sizeof(int64_t));
 
   for (int i = 0; i < count; ++i) {
     op_sizes[i] = ops[i]->size;
