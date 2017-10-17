@@ -66,6 +66,7 @@ Windows:
 1. CMake and configure
 2. Generate and open solution
 3. Debug and Release build
+4. Install would need administration privilege
 ```
 
 ### Example usage
