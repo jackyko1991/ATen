@@ -57,6 +57,7 @@ IF(MSVC)
 ENDIF()
 
 IF(NOT THCUNN_INSTALL_LIB_SUBDIR)
+  SET(THCUNN_INSTALL_BIN_SUBDIR "bin" CACHE PATH "THCUNN install binary directory")
   SET(THCUNN_INSTALL_LIB_SUBDIR "lib" CACHE PATH "THCUNN install library directory")
   SET(THCUNN_INSTALL_INCLUDE_SUBDIR "include" CACHE PATH "THCUNN install include subdirectory")
 ENDIF()
